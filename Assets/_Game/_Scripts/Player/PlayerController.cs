@@ -25,13 +25,13 @@ public class PlayerController : NetworkBehaviour {
 
     #region Movement
 
-    [SerializeField] private float _velocity = 80;
+    [SerializeField] private float _acceleration = 80;
     [SerializeField] private float _maxVelocity = 10;
     private Vector3 _input;
     private Rigidbody _rb;
 
     private void HandleMovement() {
-        _rb.velocity += _input.normalized * (_velocity * Time.deltaTime);
+        _rb.velocity += _input.normalized * (_acceleration * Time.deltaTime);
         _rb.velocity = Vector3.ClampMagnitude(_rb.velocity, _maxVelocity);
     }
 
