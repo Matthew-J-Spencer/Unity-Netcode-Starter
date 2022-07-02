@@ -1,7 +1,7 @@
 # Unity-Netcode-Starter
 A project aimed at teaching you the basics of Unity Netcode
 
-Accompanying video: https://youtu.be/e2z-e1cG4Zc
+Accompanying video: https://youtu.be/stJ4SESQwJQ
 
 😎 Checkout Netcode: https://on.unity.com/3xJQqqU
 
