@@ -4,14 +4,10 @@ using UnityEngine;
 /// <summary>
 /// Just a crappy character controller for the video
 /// </summary>
-public class PlayerController : NetworkBehaviour {
+public class PlayerController : MonoBehaviour {
     private void Awake() {
         _rb = GetComponent<Rigidbody>();
         _cam = Camera.main;
-    }
-
-    public override void OnNetworkSpawn() {
-        if (!IsOwner) Destroy(this);
     }
 
     private void Update() {
